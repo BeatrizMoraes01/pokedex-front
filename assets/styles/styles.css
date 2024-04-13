@@ -1,0 +1,160 @@
+:root{
+    --amareloPrincipal: #F5DB13;
+    --amareloSecundario: #c0a901;
+    --background: #212121;
+    --branco: #FFFFFF;
+    --font_titulos: "Jersey 15", sans-serif;
+    --font_textos: "Titillium Web", sans-serif;
+    font-size: 16px;
+}
+.pokebola--pokemon-item__igglybuff_mobile, .pokebola--pokemon-item__togetic_mobile, .pokebola--pokemon-item__pichu_mobile,.pokebola--pokemon-item__croconaw_mobile, .pokebola--pokemon-item__ampharos_mobile{
+    display: none;
+}
+body{
+    background-color: var(--background);
+    color: var(--branco);
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    background-color: var(--amareloPrincipal);
+    padding: 1em;
+}
+.principal--conteudo{
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    gap: 2em;
+}
+.principal--conteudo hr{
+    width: 80%;
+    margin: 0 auto;
+    border-color: var(--branco);
+}
+.principal--titulo{
+    font-size: 5em;
+    letter-spacing: 10px;
+    margin-left: 2.5em;
+    font-family: var(--font_titulos);
+}
+main{
+    font-family: var(--font_textos);
+}
+
+.selecionado--pokemon{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10em;
+    margin: 0 auto;
+    width: 50%;
+}
+.descricao--pokemon{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 70%;
+}
+.nome--pokemon{
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+.sobre--pokemon{
+    font-size: 1.3em;
+}
+.habilidades--pokemon--item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+.habilidades--pokemon--item p{
+    font-size: 1em;
+}
+.habilidade--pontucao{
+    font-weight: 400;
+}
+.img--pokemon{
+    width: 100%;
+    height: 100%;
+}
+.habilidades--pokemon{
+    display: flex;
+    justify-content: space-between;
+}
+.habilidades--pokemon--lista{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.pokebola--pokemon{
+    display: flex;
+    justify-content: center;
+}
+.pokebola--pokemon-lista{
+    display: flex;
+    gap: 100px;
+}
+.pokebola--pokemon-item{
+    cursor: pointer;
+}
+@media screen and (max-width: 767px){
+    .principal--titulo{
+        font-size: 1em;
+    }
+    .selecionado--pokemon{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .pokebola--pokemon-lista{
+        display: flex;
+        flex-direction: column;
+    }
+    .habilidades--pokemon--lista{
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        gap: 1em;
+    }
+    .pokebola--pokemon ul li{
+        width: 70px;
+        
+    }
+    .pokebola--pokemon-lista_mobile{
+        display: flex;
+        justify-content: center;
+        gap: 0.5em;
+        flex-direction: row;
+    }
+    .pokebola--pokemon_mobile{
+        padding: 1em 0;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background-color: var(--amareloPrincipal);
+    }
+    .pokebola--pokemon-item__igglybuff, 
+    .pokebola--pokemon-item__togetic, 
+    .pokebola--pokemon-item__pichu,
+    .pokebola--pokemon-item__croconaw, 
+    .pokebola--pokemon-item__ampharos{
+        display: none;
+    }
+    .pokebola--pokemon-item__igglybuff_mobile, 
+    .pokebola--pokemon-item__togetic_mobile, 
+    .pokebola--pokemon-item__pichu_mobile,
+    .pokebola--pokemon-item__croconaw_mobile, 
+    .pokebola--pokemon-item__ampharos_mobile
+    {
+        display: flex;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2em;
+        padding: 0.5em;
+    }
+    .pokebola--pokemon_img{
+        width: 50px;
+    }
+    .sobre--pokemon{
+        display: none;
+    }
+}

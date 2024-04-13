@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Roboto&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/imgs/icons8-pokeball-2-48.png">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__img" src="./assets/imgs/logo.png" alt="POKEMON">
+    </header>
+    <main>
+        <section class="principal--conteudo">
+            <h1 class="principal--titulo">Legendaries</h1>
+            <hr>
+            <div class="selecionado--pokemon">
+                <img class="img--pokemon" src="./assets/imgs/ampharos.webp" alt="Pokemon ampharos">
+                <div class="descricao--pokemon">
+                    <h2 class="nome--pokemon">Ampharos</h2>
+                    <p class="sobre--pokemon">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora iusto neque, consequatur provident nulla pariatur eligendi, omnis officiis ab quaerat nesciunt ipsum? Voluptatibus dolorem quas sunt recusandae molestias dignissimos nihil.</p>
+                    <div class="habilidades--pokemon">
+                        <ul class="habilidades--pokemon--lista">
+                            <li class="habilidades--pokemon--item">
+                                <p>Healthy Points</p>
+                                <p>1000,000</p>
+                            </li>
+                            <li class="habilidades--pokemon--item">
+                                <p class="habilidade--nome">Attack</p>
+                                <p class="habilidade--pontucao">1000,000</p>
+                            </li>
+                            <li class="habilidades--pokemon--item">
+                                <p class="habilidade--nome">Special Attack</p>
+                                <p class="habilidade--pontucao">1000,000</p>
+                            </li>
+                        </ul>
+                        <ul class="habilidades--pokemon--lista">
+                            <li class="habilidades--pokemon--item">
+                                <p class="habilidade--nome">Experience</p>
+                                <p class="habilidade--pontucao">1000,000</p>
+                            </li>
+                            <li class="habilidades--pokemon--item">
+                                <p class="habilidade--nome">Defense</p>
+                                <p class="habilidade--pontucao">1000,000</p>
+                            </li>
+                            <li class="habilidades--pokemon--item">
+                                <p class="habilidade--nome">Special Defense</p>
+                                <p class="habilidade--pontucao">1000,000</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pokebola--pokemon">
+                <ul class="pokebola--pokemon-lista">
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__ampharos">
+                        <img src="./assets/imgs/ampharos.webp" alt="Pokemon ampharos">
+                    </li>
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__croconaw">
+                        <img src="./assets/imgs/croconaw.webp" alt="Pokemon ampharos">
+                    </li>
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__pichu">
+                        <img src="./assets/imgs/pichu.webp" alt="Pokemon ampharos">
+                    </li>
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__togetic">
+                        <img src="./assets/imgs/togetic.webp" alt="Pokemon ampharos">
+                    </li>
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__igglybuff">
+                        <img src="./assets/imgs/igglybuff.webp" alt="Pokemon ampharos">
+                    </li>
+                </ul>
+            </div>
+            <div class="pokebola--pokemon_mobile">
+                <ul class="pokebola--pokemon-lista_mobile">
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__ampharos pokebola--pokemon-item__ampharos_mobile">
+                        <img class="" src="./assets/imgs/ampharos__icon.webp" alt="Pokemon ampharos">
+                    </li>
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__croconaw pokebola--pokemon-item__croconaw_mobile" id="pokemon__croconaw">
+                        <img class="pokebola--pokemon_img" src="./assets/imgs/croconaw__icon.webp" alt="Pokemon ampharos">
+                    </li>
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__pichu pokebola--pokemon-item__pichu_mobile"
+                    id="pokemon__pichu">
+                        <img class="pokebola--pokemon_img" src="./assets/imgs/icon_pichu.webp" alt="Pokemon ampharos">
+                    </li>
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__togetic pokebola--pokemon-item__togetic_mobile"
+                    id="pokemon__togetic">
+                        <img class="pokebola--pokemon_img" src="./assets/imgs/icon_togetic.webp" alt="Pokemon ampharos">
+                    </li>
+                    <li class="pokebola--pokemon-item pokebola--pokemon-item__igglybuff pokebola--pokemon-item__igglybuff_mobile"
+                    id="pokemon__igglybuff">
+                        <img class="pokebola--pokemon_img" src="./assets/imgs/igglybuff_icon.webp" alt="Pokemon ampharos">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
